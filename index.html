@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lola Thomas — Martech &amp; Growth</title>
+<title>Lola Thomas — Growth, Martech &amp; Product Strategy</title>
+<meta name="description" content="Lola Thomas: growth strategy, product roadmaps, martech and experimentation. Leading the AI Paywall workstream on secondment at the Financial Times.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
@@ -158,7 +159,7 @@
     flex-shrink:0; width: 30px; height: 30px; border-radius: 50%;
     border: 1px solid var(--border);
     display:flex; align-items:center; justify-content:center;
-    font-size: 15px; color: var(--text-dim);
+    line-height: 0; padding: 0; color: var(--text-dim);
     transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
   .work-row summary:hover .work-arrow{ border-color: var(--accent); color: var(--accent); }
@@ -277,16 +278,42 @@
     .ws-row{ flex-direction: column; align-items: stretch; gap: 18px; }
     .ws-graphic{ flex: none; width: 100%; }
   }
+
+  section[id]{scroll-margin-top:90px}
+  .hero h1{max-width:20ch}
+  .cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+  .cap-card{border-top:1px solid var(--border);padding-top:20px}
+  .cap-number{font-family:var(--display);color:var(--accent);font-size:13px}
+  .cap-card h3{font-family:var(--display);font-size:20px;line-height:1.3;margin:10px 0}
+  .cap-card p{font-size:16px;color:var(--text-dim)}
+  .cap-card .cap-foot{font-size:13px;color:var(--text);font-weight:500}
+  .case-proof{font-size:14px;color:var(--text-dim);margin:8px 0 0}
+  .work-body .val{margin-top:0}
+  @media(max-width:650px){.cap-grid{grid-template-columns:1fr}.hero h1{font-size:40px}.nav-name{font-size:20px}}
+
+  .cap-card .ws-graphic{width:100%;height:190px;margin-bottom:20px}
+  @media(prefers-reduced-motion:reduce){
+    .ws-graphic .dt-row,.ws-graphic .fade-in-el{opacity:1;transform:none;transition:none}
+    .ws-graphic .sketch-path{stroke-dashoffset:0;transition:none}
+    html{scroll-behavior:auto}
+  }
+  .work-arrow svg{display:block;flex:none;width:16px;height:16px}
 </style>
 </head>
 <body>
+<!-- EDITORIAL REVIEW BEFORE PUBLISHING:
+1. Add direct-report/team-development evidence only if applicable; this draft describes verified workstream and project ownership.
+2. Confirm whether the 36% conversion uplift is relative, the conversion event and test period. Add these to the experiment case if shareable.
+3. Add adoption, commercial results and scope to other cases where evidence is available. No new results have been invented.
+4. CV links point to the existing GitHub-hosted PDF so this standalone example can be opened locally.
+-->
 
 <header class="nav">
   <div class="nav-inner">
     <div class="nav-name">Lola Thomas</div>
     <nav class="nav-links">
       <a href="#work">Work</a>
-      <a href="#workstreams">How I work</a>
+      <a href="#workstreams">Capabilities</a>
       <a href="#toolkit">Toolkit</a>
       <button class="copy-btn" id="copy-email-nav"><span class="dot"></span><span class="copy-label">Copy email</span></button>
     </nav>
@@ -296,11 +323,11 @@
 <div class="wrap">
 
   <section class="hero">
-    <p class="kicker">Martech &amp; Growth</p>
-    <h1>I help media businesses choose the right technology, then prove it's working.</h1>
-    <p class="lead">Manager, Experimentation &amp; Analytics at In Digital, currently on secondment inside the Financial Times' Performance and Marketing Technology team. My work sits across platform &amp; vendor strategy, analytics and CDPs, and the experimentation that tells you if any of it is actually paying off.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" id="cv-download" href="lola_t_cv.pdf" download="lola_t_cv.pdf">Download CV</a>
+    <p class="kicker">Growth, Martech &amp; Product Strategy</p>
+    <h1>I turn marketing technology, data and experimentation into commercial growth.</h1>
+    <p class="lead">I lead the AI Paywall workstream on secondment at the Financial Times, setting strategy for how the model drives commercial growth. As Manager, Experimentation &amp; Analytics at In Digital, I combine platform strategy, commercial analysis and hands-on technical delivery.</p>
+    <div class="cta-row"><a class="btn btn-primary" href="#work">Explore selected work</a>
+      <a class="btn btn-ghost" id="cv-download" href="https://boogiex.github.io/Portfolio/lola_t_cv.pdf" download="lola_t_cv.pdf">Download CV</a>
     </div>
   </section>
 
@@ -324,22 +351,16 @@
 
 <div class="wrap">
 
+  <section class="block" id="work"><p class="block-kicker">Selected work</p><h2>Strategy, ownership and measurable impact</h2><p class="section-intro">Examples of the decisions I support and the work I own. Client details are generalised where confidentiality applies.</p><div class="row-list"><details class="work-row" open><summary><div class="work-row-main"><p class="work-tag">Financial Times · Secondment</p><h3 class="work-title">Leading strategy for the FT’s AI-powered paywall</h3><p class="case-proof">Workstream leadership · AI strategy · Commercial measurement</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Commercial challenge</p><p class="val">Connect AI-powered access decisions across the onsite journey with long-term customer value and commercial performance.</p></div><div class="row"><p class="label">My remit</p><p class="val">Lead the AI Paywall workstream on secondment, setting strategy for how the model drives commercial growth.</p></div><div class="row"><p class="label">Strategic focus</p><p class="val">Understand how customer lifetime value informs model decisions, and connect paywall performance with the broader experimentation strategy.</p></div><div class="row"><p class="label">Delivery &amp; stakeholder support</p><p class="val">Evaluated the data points feeding the model’s state space to identify input issues and reduce the risk of model drift. Interpreted Q-value reports to understand the model’s action preferences and assess whether its decisions supported commercial gain. Built reporting frameworks in Amplitude and Looker to track performance and support senior stakeholder decisions.</p></div><div class="row"><p class="label">Output</p><p class="val">An LTV-led paywall strategy and reporting framework connecting model performance with commercial objectives.</p></div></div></details><details class="work-row" ><summary><div class="work-row-main"><p class="work-tag">Subscription publisher · Platform selection</p><h3 class="work-title">Owning a subscription-platform RFP end-to-end</h3><p class="case-proof">Client ownership · Requirements · Vendor evaluation</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Commercial challenge</p><p class="val">Select a subscription and paywall platform against the client’s business needs and existing technical environment.</p></div><div class="row"><p class="label">My remit</p><p class="val">Owned the RFP end-to-end and the client relationship throughout, including stakeholder interviews, requirements, roadmap, timeline, vendor demonstrations and selection.</p></div><div class="row"><p class="label">Key decision</p><p class="val">Built requirements across marketing, analytics, engineering, commercial teams and VP-level stakeholders. Combined these with a hands-on website audit to scrutinise platform capabilities against the needs of the whole business.</p></div><div class="row"><p class="label">How I led delivery</p><p class="val">Conducted stakeholder interviews to capture functional, technical and commercial needs, then translated them into a structured evaluation. Coordinated vendor demonstrations and managed the evaluation and selection process, using the requirements to challenge platform claims and assess business fit.</p></div><div class="row"><p class="label">Outcome</p><p class="val">An evidenced vendor selection, with a clear decision trail for client stakeholders.</p></div></div></details><details class="work-row"><summary><div class="work-row-main"><p class="work-tag">B2C clients · Experimentation &amp; growth</p><h3 class="work-title">Leading experimentation across the customer journey</h3><p class="case-proof">Cross-client experimentation · Access strategy · Proposition &amp; conversion</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Commercial challenge</p><p class="val">Understand which products, propositions and experiences move customers towards conversion, and how access decisions should vary across audiences and stages of the journey.</p></div><div class="row"><p class="label">My remit</p><p class="val">Owned experimentation roadmaps across multiple B2C clients, from ideation, hypothesis development and prioritisation through test builds, deployment, QA and post-test analysis.</p></div><div class="row"><p class="label">Access &amp; audience strategy</p><p class="val">Tested when to show a paywall, how to present a registration wall and which experiences users should see based on their referrer. Used experimentation to evaluate how access and sampling rules influence onward conversion.</p></div><div class="row"><p class="label">Product &amp; proposition</p><p class="val">Ran experiments on product selection, propositions, pricing, offers and messaging to understand what resonates with users and supports commercial performance.</p></div><div class="row"><p class="label">Experience &amp; conversion</p><p class="val">Tested full landing-page UI/UX, paywall UI/UX and subscription funnels, examining both individual touchpoints and the journey between them.</p></div><div class="row"><p class="label">Analysis &amp; decisions</p><p class="val">Led post-test analysis to assess uplift and commercial potential, using the findings to inform optimisation decisions and subsequent experimentation priorities.</p></div><div class="row"><p class="label">Selected result · The Independent</p><p class="val">A subscription-funnel UI/UX experiment delivered a 36% uplift in conversion by changing how information was communicated at different stages of the journey. This is one result within a broader cross-client experimentation programme.</p></div></div></details><details class="work-row" ><summary><div class="work-row-main"><p class="work-tag">The Independent · Commercial analytics</p><h3 class="work-title">Modelling the value of registration and product mix</h3><p class="case-proof">LTV modelling · Revenue trade-offs</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Commercial challenge</p><p class="val">Understand the value of a registration wall relative to advertising revenue, and assess the product mix that could maximise overall revenue.</p></div><div class="row"><p class="label">My contribution</p><p class="val">Built a registered-user LTV model and a separate product-mix analysis to compare revenue opportunities.</p></div><div class="row"><p class="label">Strategic trade-off</p><p class="val">Assess long-term registered-user value alongside advertising monetisation, rather than evaluating each revenue stream in isolation.</p></div><div class="row"><p class="label">Outcome</p><p class="val">Provided a quantified basis for evaluating registration and product-mix decisions.</p></div></div></details><details class="work-row"><summary><div class="work-row-main"><p class="work-tag">News UK · AI paywall strategy</p><h3 class="work-title">Shaping AI paywall strategy, evaluation and rollout</h3><p class="case-proof">Market research · AI use cases · Experimentation roadmap</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Commercial challenge</p><p class="val">Determine how an AI-powered paywall could support News UK’s business goals, which platform was the best fit and how to evaluate it before a wider rollout.</p></div><div class="row"><p class="label">Market &amp; platform assessment</p><p class="val">Researched the AI paywall market and assessed vendors’ capabilities and underlying models against business objectives. Translated technical differences into practical commercial trade-offs.</p></div><div class="row"><p class="label">Strategy &amp; model inputs</p><p class="val">Helped define how AI could be used within the paywall strategy and outlined the data points that should be sent to support model decision-making.</p></div><div class="row"><p class="label">Experimentation &amp; rollout planning</p><p class="val">Outlined an experimentation roadmap to evaluate the approach and inform an eventual rollout, connecting the proposed use of AI with the evidence needed to assess its value.</p></div><div class="row"><p class="label">Output</p><p class="val">A business-led approach to platform evaluation, model inputs and experimentation, supporting decisions about how to introduce an AI-powered paywall.</p></div></div></details><details class="work-row"><summary><div class="work-row-main"><p class="work-tag">Internal enablement · AI agents</p><h3 class="work-title">Building AI support for day-to-day experimentation</h3><p class="case-proof">Experimentation agent · Workflow support · Team enablement</p></div><span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></summary><div class="work-body"><div class="row"><p class="label">Opportunity</p><p class="val">Apply AI to the day-to-day work behind experimentation, alongside its use in customer-facing platforms.</p></div><div class="row"><p class="label">My contribution</p><p class="val">Helped build an experimentation agent and supported colleagues in using AI bots to assist with everyday work.</p></div><div class="row"><p class="label">Practical focus</p><p class="val">Connected hands-on AI development with the needs of the people using it, exploring how agent-based support could fit into existing experimentation workflows.</p></div></div></details></div></section>
+
   <section class="block about" id="about">
-    <p class="block-kicker">Background</p>
-    <h2>About</h2>
-    <p>I'm a data-driven, commercially-minded martech professional. My career started with an engineering degree, which gave me a technical foundation I carried straight into <strong>In Digital</strong>, where that technical acumen grew fast, helping clients set up paywall platforms and understand the best ways to measure success and optimise their product stack.</p>
-    <p>That grounding shaped how I approached experimentation: it wasn't just about running tests, it was about validating what actually moved the needle for users, and, in turn, grew our clients' customer bases across the full user lifecycle, from before someone lands on-site through to conversion and retention.</p>
-    <p>That breadth of experience opened the door to a secondment inside the <strong>Financial Times</strong>, where I now lead the AI Paywall workstream, setting strategy for how the model drives commercial growth.</p>
-    <p>Today my work spans the full user lifecycle: selecting and vetting the right products and vendors, setting platform strategy, and making sure everything in that stack earns its keep. What ties it together is a long-standing interest in how numbers and data explain user behaviour, and how that understanding drives commercial growth.</p>
-  </section>
+<p class="block-kicker">About</p><h2>Commercial judgement. Technical depth.</h2>
+<p>I’m a martech and growth professional working across platform strategy, analytics and experimentation. At the <strong>Financial Times</strong>, I lead the AI Paywall workstream, setting strategy for how the model supports commercial growth.</p>
+<p>My work connects business objectives with the platforms, data and customer experiences that deliver them. That includes evaluating vendors, owning product roadmaps for marketing teams, modelling customer value and leading experimentation from prioritisation through to delivery and analysis. I connect technical optimisation with acquisition, conversion and retention, helping teams understand how product priorities support consumer growth.</p>
+<p>An engineering degree gave me the technical foundation I developed at <strong>In Digital</strong>, working with publishers and B2C businesses on integrations, measurement and subscription growth. I bring that hands-on understanding to commercial decisions: what to invest in, how to measure value and where to improve the customer journey.</p>
+</section>
 
-  <section class="block" id="workstreams">
-    <p class="block-kicker">How I work</p>
-    <h2>Core workstreams</h2>
-    <p class="section-intro">Three lenses I bring to every project, from wiring up the tech stack to proving what actually moved the numbers.</p>
-
-    <div class="ws-row">
-      <div class="ws-graphic" id="ws-martech">
+  <section class="block" id="workstreams"><p class="block-kicker">Capabilities</p><h2>How I connect strategy with delivery</h2><p class="section-intro">Four connected capabilities, grounded in commercial objectives and hands-on experience.</p><div class="cap-grid"><article class="cap-card"><div class="ws-graphic" id="ws-strategy" aria-hidden="true"><svg viewBox="0 0 260 190" width="100%" height="100%"><path class="sketch-path" d="M35 140 L95 100 L158 110 L225 44" fill="none" stroke="var(--accent)" stroke-width="3"/><g class="fade-in-el delay-labels" fill="var(--text)"><circle cx="35" cy="140" r="5"/><circle cx="95" cy="100" r="5"/><circle cx="158" cy="110" r="5"/><circle cx="225" cy="44" r="5"/><text x="24" y="164" font-size="11">Objectives</text><text x="72" y="80" font-size="11">Priorities</text><text x="138" y="134" font-size="11">Delivery</text><text x="182" y="28" font-size="11">Impact</text></g></svg></div><span class="cap-number">01</span><h3>Growth strategy &amp; product leadership</h3><p>I own product roadmaps for marketing teams, translating consumer growth objectives into technical optimisation priorities. I connect marketing requirements with product delivery so teams can track progress and understand how each improvement is expected to support acquisition, conversion or retention.</p><p>I bring an understanding of how owned, earned and paid channels work together to grow consumer bases, linking how people discover a brand with the product experiences that turn that interest into lasting customer value. That perspective informs how I prioritise platform investment, customer journeys and experimentation.</p><p>My commercial strategy experience includes leading the FT AI Paywall workstream and modelling trade-offs between registration, subscriptions and advertising revenue.</p><p class="cap-foot">Product roadmap ownership, channel strategy and consumer growth</p></article><article class="cap-card"><div class="ws-graphic" aria-hidden="true" id="ws-martech">
         <div class="dt-mock">
           <div class="dt-head">
             <span class="dt-dot" style="background:#FF5F57"></span>
@@ -352,17 +373,7 @@
           <div class="dt-row"><span class="dt-method post">POST</span><span class="dt-path">/decision-engine</span><span class="dt-status">200</span></div>
           <div class="dt-row"><span class="dt-method get">GET</span><span class="dt-path">/render-offer</span><span class="dt-status">200</span></div>
         </div>
-      </div>
-      <div class="ws-copy">
-        <h3>Martech</h3>
-        <p>I've helped clients with platform integration, which gave me a strong grasp of how tech stacks and websites actually work under the hood, including request flow and the order API calls need to happen in for systems to run efficiently.</p>
-        <p>I also have a solid understanding of AI and reinforcement learning: how data from the web layer fed into the model, how it reacted and learned, and how it turned that into commercial decisions. That meant evaluating what the model was receiving and studying its behaviour to reduce model drift, and optimising how it sat within the tech stack to protect platform ROI.</p>
-        <p>I helped run a data migration for one client, outlining requirements and tagging user interactions so meaningful data was captured for attribution and a stronger marketing function. I've also helped build AI agents to automate work for colleagues.</p>
-      </div>
-    </div>
-
-    <div class="ws-row">
-      <div class="ws-graphic" id="ws-data">
+      </div><span class="cap-number">02</span><h3>Martech &amp; platform strategy</h3><p>I evaluate vendors against business and technical requirements, contribute to marketing technology roadmaps and work on platform integration, including API request flows and data migration requirements.</p><p>I debug how platforms work on-site and interact with one another, QA customer journeys and troubleshoot issues across the experience. I set up and validate tagging and tracking across key user interactions to support end-to-end attribution and reliable marketing measurement.</p><p>For AI-powered paywalls, I evaluate state-space inputs and interpret Q-value reports to connect model behaviour with commercial performance. I also help build AI agents to support colleagues’ day-to-day work.</p><p class="cap-foot">Platform integration, debugging, QA, tagging, attribution and AI assessment</p></article><article class="cap-card"><div class="ws-graphic" aria-hidden="true" id="ws-data">
         <svg viewBox="0 0 260 190" width="100%" height="100%">
           <line x1="30" y1="150" x2="240" y2="150" stroke="var(--text)" stroke-width="1.5" stroke-opacity="0.6" class="fade-in-el"/>
           <line x1="30" y1="150" x2="30" y2="20" stroke="var(--text)" stroke-width="1.5" stroke-opacity="0.6" class="fade-in-el"/>
@@ -371,15 +382,7 @@
           <text x="150" y="28" font-size="10" fill="var(--text)" class="fade-in-el delay-labels" font-family="ui-monospace, monospace">Registration</text>
           <text x="150" y="132" font-size="10" fill="var(--accent)" class="fade-in-el delay-labels" font-family="ui-monospace, monospace">Ad revenue</text>
         </svg>
-      </div>
-      <div class="ws-copy">
-        <h3>Data</h3>
-        <p>I've run numerous LTV analyses to understand how to optimise user revenue, and built models to reflect business performance, weighing up different revenue levers against each other. That's included building business performance and trading dashboards, and running in-depth analysis into opportunity areas to help drive acquisition. I'm comfortable with forecasting and modelling more broadly, using it to turn raw numbers into decisions the business could act on.</p>
-      </div>
-    </div>
-
-    <div class="ws-row">
-      <div class="ws-graphic" id="ws-experimentation">
+      </div><span class="cap-number">03</span><h3>Analytics &amp; measurement</h3><p>I build LTV models, forecasts and trading dashboards to understand performance and identify growth opportunities. I also develop measurement frameworks and tracking requirements so marketing teams can connect customer behaviour to business outcomes and make better-informed decisions.</p><p class="cap-foot">LTV, forecasting, marketing measurement and decision support</p></article><article class="cap-card"><div class="ws-graphic" aria-hidden="true" id="ws-experimentation">
         <svg viewBox="0 0 260 190" width="100%" height="100%">
           <line x1="20" y1="155" x2="245" y2="155" stroke="var(--text)" stroke-width="1.5" stroke-opacity="0.6" class="fade-in-el"/>
           <rect x="105" y="25" width="55" height="130" fill="var(--accent)" fill-opacity="0.14" class="fade-in-el delay-band"/>
@@ -388,181 +391,12 @@
           <path d="M20,150 C55,150 65,30 132,30 C199,30 210,150 245,150" fill="none" stroke="var(--text)" stroke-width="2.5" class="sketch-path"/>
           <text x="108" y="18" font-size="10" fill="var(--accent)" class="fade-in-el delay-labels" font-family="ui-monospace, monospace">95% CI</text>
         </svg>
-      </div>
-      <div class="ws-copy">
-        <h3>Experimentation</h3>
-        <p>I've run experimentation across numerous B2C clients to optimise conversion, covering creative and UI/UX testing, access and sampling testing, and pricing, offer and messaging testing to understand what actually drove onward conversion. This work included building one of the most optimised subscription funnels I've worked on.</p>
-        <p>I own experimentation roadmaps end-to-end, from ideation through to hypothesis creation, roadmap setting, test builds, deployment and QA. Once a test has run, I lead the post-test analysis to understand the potential impact and uplift, and assess it as an optimisation.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="block" id="work">
-    <p class="block-kicker">Case studies</p>
-    <div class="block-head"><h2>Work</h2></div>
-    <p class="section-intro">A handful of projects spanning platform selection, data &amp; measurement, and AI. Client specifics are generalised where confidentiality applies.</p>
-
-    <div class="row-list">
-
-      <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">Financial Times · Secondment</p>
-            <p class="work-title">Leading strategy for the FT's AI-powered paywall</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">The FT's AI-powered paywall needed to make smarter access decisions across the whole onsite journey — which meant someone owning the strategy behind how the model actually used commercial signals like LTV to drive performance.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Led strategy for the paywall's onsite journey, working closely with the model to understand how customer lifetime value influenced its decisioning and overall performance. Sat alongside the broader experimentation strategy — audience personalisation and behavioural analytics testing — with LTV as the primary success metric. Built reporting frameworks and dashboards in <em>Amplitude</em> and <em>Looker</em> to track impact and support senior stakeholder decisions.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">Sharper, LTV-informed decisioning across the onsite journey, and a paywall strategy that tied model performance directly to commercial impact.</p>
-          </div>
-        </div>
-      </details>
-
-      <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">News UK · AI evaluation</p>
-            <p class="work-title">Vetting AI-powered paywall vendors</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">News UK wanted to explore AI-powered paywall tooling but had no way to evaluate different vendors' underlying models against their actual business goals.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Assessed AI paywall vendors on how their models worked and what that would mean in practice, translating technical differences between them into plain business trade-offs News UK could weigh up.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">An informed, business-goal-aligned vendor decision, rather than one based on feature lists alone.</p>
-          </div>
-        </div>
-      </details>
-
-      <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">The Independent · Revenue modelling</p>
-            <p class="work-title">LTV and product-mix modelling</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">The Independent needed to know whether a registration wall was actually more valuable than advertising revenue, and what mix of products would maximise overall revenue.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Built a registered-user LTV model to quantify the long-term value of a registration wall against ad revenue, plus separate product-mix analysis to identify the blend of products that maximised overall revenue.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">Reshaped how The Independent weighed subscription growth against advertising monetisation, with a model rather than a hunch behind the decision.</p>
-          </div>
-        </div>
-      </details>
-  <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">The Independent · Experimentation</p>
-            <p class="work-title">Streamlining The Independent's subscription funnel</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">The Independent's subscription journey was surfacing too much information at the wrong moments, adding friction rather than helping users decide.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Ran a UI/UX test that changed how that information was communicated, so it resonated with users and anchored them at each stage of the journey rather than overwhelming them upfront.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">A 36% uplift in conversion, driven by an experience that felt clearer and more guided, not just shorter.</p>
-          </div>
-        </div>
-      </details>
-      
-      <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">Subscription publisher · RFP</p>
-            <p class="work-title">Vendor selection for a subscription &amp; paywall platform</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">A client needed to replace their subscription and paywall platform but had no structured way to compare vendors against their actual requirements.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Owned the RFP end-to-end and the client relationship throughout: defined requirements, built the roadmap and timeline, coordinated vendor demos, managed procurement, and ran a hands-on audit of the client's existing website to ground the evaluation in reality rather than vendor pitches.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">A vendor selection the client's stakeholders could stand behind, backed by a clear, evidenced decision trail rather than a gut call.</p>
-          </div>
-        </div>
-      </details>
-
-      <details class="work-row">
-        <summary>
-          <div class="work-row-main">
-            <p class="work-tag">Agency clients · Platform &amp; analytics strategy</p>
-            <p class="work-title">Journey mapping, CDP integration and measurement frameworks</p>
-          </div>
-          <span class="work-arrow">→</span>
-        </summary>
-        <div class="work-body">
-          <p class="problem">Clients had onsite customer journeys and data scattered across disconnected tools, with no coherent way to track them or connect tracking back to business goals.</p>
-          <div class="row">
-            <p class="label">Approach</p>
-            <p class="val">Advised on platform and analytics tool selection to support onsite journeys and CDP integrations, then mapped end-to-end user journeys myself and implemented the tracking that fed each client's measurement framework.</p>
-          </div>
-          <div class="row">
-            <p class="label">Outcome</p>
-            <p class="val">Journeys and tracking tied cleanly back to business and marketing goals — giving clients a measurement foundation they could actually act on, not just report against.</p>
-          </div>
-        </div>
-      </details>
-
-    </div>
-  </section>
+      </div><span class="cap-number">04</span><h3>Experimentation &amp; lifecycle growth</h3><p>I own experimentation roadmaps from ideation and prioritisation through test builds, QA and post-test analysis. Across B2C clients, I test product selection, propositions, paywall timing, registration walls and referrer-based experiences, as well as landing pages, paywalls and subscription funnels. I connect pricing, messaging and UX findings to conversion and customer value.</p><p class="cap-foot">Customer insight, pricing, messaging and conversion optimisation</p></article></div></section>
 
   <section class="block" id="toolkit">
     <p class="block-kicker">Skills &amp; tools</p>
-    <div class="block-head"><h2>Focus areas</h2></div>
-    <div class="row-list">
-      <div class="focus-row">
-        <p class="focus-name">Platform &amp; vendor strategy</p>
-        <p class="focus-desc">RFPs, vendor evaluation</p>
-      </div>
-      <div class="focus-row">
-        <p class="focus-name">Analytics &amp; measurement</p>
-        <p class="focus-desc">Tool selection, tracking, dashboards</p>
-      </div>
-      <div class="focus-row">
-        <p class="focus-name">Experimentation</p>
-        <p class="focus-desc">A/B &amp; multivariate testing</p>
-      </div>
-      <div class="focus-row">
-        <p class="focus-name">Lifecycle optimisation</p>
-        <p class="focus-desc">Journey mapping, retention, growth</p>
-      </div>
-      <div class="focus-row">
-        <p class="focus-name">Tech stack selection, management &amp; ROI</p>
-        <p class="focus-desc">CDPs, paywalls, martech tooling</p>
-      </div>
-      <div class="focus-row">
-        <p class="focus-name">AI evaluation</p>
-        <p class="focus-desc">Model assessment, business trade-offs</p>
-      </div>
-    </div>
-    <div class="chips">
+    <div class="block-head"><h2>Platforms &amp; tools</h2></div>
+    <p class="section-intro">Tools I use across platform evaluation, analytics, experimentation and delivery.</p><div class="chips">
       <span class="chip">Zephr</span>
       <span class="chip">Piano VX</span>
       <span class="chip">Optimizely</span>
@@ -576,6 +410,8 @@
       <span class="chip">Splunk</span>
       <span class="chip">Confluence</span>
       <span class="chip">Jira</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
       <span class="chip">SQL</span>
       <span class="chip">Excel</span>
       <span class="chip">Tableau</span>
@@ -588,11 +424,11 @@
   <section class="block" id="contact">
     <p class="block-kicker">Say hello</p>
     <h2>Get in touch</h2>
-    <p class="section-intro">Open to hearing about martech, growth and platform-strategy roles.</p>
+    <p class="section-intro">Let’s talk about martech strategy, experimentation and commercial growth.</p>
     <div class="contact-row">
       <button class="btn btn-primary" id="copy-email-contact" style="border:none; cursor:pointer; font-family: var(--sans);">Copy email</button>
       <a class="btn btn-ghost" href="https://www.linkedin.com/in/lola-thomas-3260001a5/" target="_blank" rel="noopener">LinkedIn</a>
-     <a class="btn btn-ghost" id="cv-download-2" href="lola_t_cv.pdf" download="lola_t_cv.pdf">Download CV</a>
+     <a class="btn btn-ghost" id="cv-download-2" href="https://boogiex.github.io/Portfolio/lola_t_cv.pdf" download="lola_t_cv.pdf">Download CV</a>
     </div>
   </section>
 
@@ -605,7 +441,7 @@
         <p class="f-title">Pages</p>
         <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#workstreams">How I work</a>
+        <a href="#workstreams">Capabilities</a>
         <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </div>
@@ -616,11 +452,11 @@
       </div>
       <div class="footer-col">
         <p class="f-title">CV</p>
-       <a href="lola_t_cv.pdf" id="cv-download-3" download="lola_t_cv.pdf">Download CV</a>
+       <a href="https://boogiex.github.io/Portfolio/lola_t_cv.pdf" id="cv-download-3" download="lola_t_cv.pdf">Download CV</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Lola Thomas — Martech &amp; Growth</span>
+      <span>Lola Thomas — Growth, Martech &amp; Product Strategy</span>
       <span>© 2026</span>
     </div>
   </div>
